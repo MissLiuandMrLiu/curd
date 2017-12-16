@@ -1,0 +1,26 @@
+<% include header %>
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>电话</th>
+            <th>邮箱</th>
+            <th>日期</th>
+            <th colspan="2">操作</th>
+        </tr>
+        <% docs.forEach(function (doc) { %>
+        <tr>
+            <td><%= doc.uname %></td>
+            <td><%= doc.sex %></td>
+            <td><%= doc.age %></td>
+            <td><%= doc.number %></td>
+            <td><%= doc.Email %></td>
+            <td><%= doc.time %></td>
+            <td><a href="/edit/<%= doc.uname %>/<%= doc.number %>/<%= doc.Email %>">编辑</a></td>
+            <td><a href="/remove/<%= doc.uname%>">删除</a></td>
+        </tr>
+        <% }) %>
+    </table>
+
+<% include footer %>

@@ -1,0 +1,18 @@
+<% include header%>
+<form class="adds" action="/edit" method="post">
+    <span>姓名</span>
+    <input type="text" name="uname" onkeyup="value=value.replace(/[\d]/g | /^ +| +$/g,'') "onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[\d]/g,''))" maxlength=10 > <br>
+    <p style="margin:0 20px 0 -69px">
+        <span>性別</span>
+        <input  type="radio" checked="checked" name="sex"  value="男"/>男
+        <input  type="radio"  name="sex" value="女"/>女 <br>
+    </p>
+    <span>年齡</span>
+    <input type="number" name="age" maxlength="2"> <br>
+    <span>電話</span>
+    <input type="number" name="number" maxlength=11> <br>
+    <span>邮箱</span>
+    <input type="text" name="Email" onkeyup="value=value.replace(/[\/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/ ]/g,'')"> <br>
+    <input type="submit" value="提交">
+</form>
+<% include footer %>

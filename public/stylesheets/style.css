@@ -1,0 +1,46 @@
+html  {
+  width: 100%;
+}
+body {
+  background-attachment: fixed;
+  background-image: url('../images/2.jpg');
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100%;
+  margin:0 auto;
+}
+a{
+  text-decoration: none;
+}
+table {
+  width: 80%;
+  margin: auto;
+}
+table,tr,td,th {
+  border-collapse: collapse;
+  border:1px solid yellow;
+  padding: 10px 0;
+  text-align: center;
+}
+header{
+  color: rebeccapurple;
+  text-align: center;
+}
+.search {
+  margin-left: 75%;
+  margin-bottom: 20px;
+}
+
+.header {
+  font-size: 20px;
+  margin-left: 150px;
+}
+.add {
+  font-size:20px;
+}
+.logout {
+  font-size:20px;
+  margin-left: 65%;
+}
+.adds {
+  text-align: center;
+}
