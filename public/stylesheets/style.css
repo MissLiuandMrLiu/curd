@@ -44,3 +44,8 @@ header{
 .adds {
   text-align: center;
 }
+
+.login,.reg {
+  margin-top: 20px;
+  margin-left: 40%;
+}
